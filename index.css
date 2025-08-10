@@ -1,0 +1,473 @@
+/* Reset Css */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+
+/* design header with nav  */
+
+header {
+  background-color: blueviolet;
+}
+
+#navigation-bar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 10vh;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.nav-logo {
+  display: flex;
+  padding-left: 8vw;
+  align-items: center;
+}
+
+.nav-logo img {
+  width: 100px;
+
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 4vw;
+  padding: 0px 10px;
+
+}
+
+li {
+  width: 100px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+
+a:hover {
+  color: rgb(201, 195, 206);
+  font-size: 19px;
+}
+
+/* design hero section  */
+
+.hero-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 70vh;
+  width: 70vw;
+  margin: 2rem auto;
+}
+
+.img-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.img-sec img {
+  height: 70%;
+}
+
+.info-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+button {
+  padding: 10px 3rem;
+  border-radius: 22px;
+  background-color: blueviolet;
+  border: none;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+button:hover {
+  color: rgb(195, 171, 214);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* design about section  */
+
+
+.about-hero-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-items: center;
+  padding: 40px;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  background-color: blueviolet;
+  color: white;
+}
+
+
+.about-info-sec img {
+  width: 100%;
+  width: 400px;
+  height: auto;
+  margin: 0px auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+
+.about-info-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.about-info-sec h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.about-info-sec p {
+  font-size: 1.1rem;
+  color: white;
+  line-height: 1.6;
+}
+
+.btn2 {
+  width: 14vw;
+  border: 2px solid rgb(111, 12, 203);
+  color: black;
+}
+
+/* Design from section  */
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 80vh;
+  gap: 10px;
+  margin: auto;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+input {
+  width: 90%;
+  padding: 10px 10px;
+  border-radius: 22px;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  font-size: 1.2rem;
+  outline: none;
+  margin: 10px 0px;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.btn-link:hover {
+  background-color: rgb(76, 2, 146);
+  color: rgb(219, 181, 255);
+  cursor: pointer;
+}
+
+.sub-details {
+  display: flex;
+  /* flex-direction: ; Stack on small devices */
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 40px auto;
+  padding: 20px;
+  gap: -10px;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sub-details img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Design footer with links */
+.footer {
+  background-color: blueviolet;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.4rem;
+}
+
+.social-icons a:hover {
+  color: rgb(39, 7, 70)
+}
+
+/* -------------------- Responsive Media Queries -------------------- */
+
+/* @media (max-width: 1024px) {
+  .hero-section {
+    width: 90vw;
+    height: auto;
+  }
+
+  .btn2 {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 768px) {
+  #navigation-bar {
+    grid-template-columns: 1fr;
+    text-align: center;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .nav-logo {
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .nav-list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-section,
+  .about-hero-section,
+  .sub-details {
+    grid-template-columns: 1fr !important;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img-sec img,
+  .about-info-sec img,
+  .sub-details img {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .info-sec,
+  .about-info-sec,
+  .text-content {
+    align-items: center;
+  }
+
+  .user-details {
+    width: 90%;
+    height: auto;
+    align-items: center;
+    text-align: left;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .btn2 {
+    width: 50vw;
+  }
+
+  .sub-details {
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+@media(min-width:768px) {
+  #navigation-bar {
+    height: 10vh;
+  }
+}
+
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+   } 
+
+  p {
+    font-size: 1rem;
+  }
+
+  button,
+  input {
+    font-size: 1rem;
+  }
+
+  .btn2 {
+    width: 60vw;
+  }
+
+  .footer {
+    font-size: 0.85rem;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+    margin: 0 8px;
+  }
+}
+
+
+
+  */
+
+  /* ===================== IMPROVED RESPONSIVE CSS ===================== */
+
+@media (max-width: 1024px) {
+  .hero-section {
+    width: 90vw;
+    height: auto;
+  }
+  .btn2 {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Navigation Bar */
+  #navigation-bar {
+    grid-template-columns: 1fr;
+    text-align: center;
+    height: auto;
+    padding: 10px 0;
+  }
+  .nav-logo {
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+  .nav-list {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  li {
+    width: auto; /* remove fixed width */
+  }
+
+  /* Sections stack vertically */
+  .hero-section,
+  .about-hero-section,
+  .sub-details {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Images responsive */
+  .img-sec img,
+  .about-info-sec img,
+  .sub-details img {
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  /* Text alignment center */
+  .info-sec,
+  .about-info-sec,
+  .text-content {
+    align-items: center;
+  }
+
+  /* Form full width */
+  .user-details {
+    width: 90%;
+    height: auto;
+    align-items: center;
+  }
+  input {
+    width: 100%;
+  }
+
+  /* Buttons resize */
+  .btn2 {
+    width: 50vw;
+  }
+
+  /* Fix gap & center content */
+  .sub-details {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  button,
+  input {
+    font-size: 1rem;
+  }
+  .btn2 {
+    width: 60vw;
+  }
+  .footer {
+    font-size: 0.85rem;
+  }
+  .social-icons a {
+    font-size: 1.2rem;
+    margin: 0 8px;
+  }
+}
+
+html, body {
+  overflow-x: hidden;
+}
